@@ -1,4 +1,4 @@
-{
+var salasDMI = {
     "type": "FeatureCollection",
     "name": "salasDMI",
     "crs": {
@@ -13,7 +13,7 @@
             "properties": {
                 "Latitude": -25.94972974,
                 "Longitude": 32.59967431,
-                "Nome da Sala": "C1",
+                "Nome": "C1",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -30,7 +30,7 @@
             "properties": {
                 "Latitude": -25.94973577,
                 "Longitude": 32.59978026,
-                "Nome da Sala": "C2",
+                "Nome": "C2",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -47,7 +47,7 @@
             "properties": {
                 "Latitude": -25.94973516,
                 "Longitude": 32.59989157,
-                "Nome da Sala": "C3",
+                "Nome": "C3",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -64,7 +64,7 @@
             "properties": {
                 "Latitude": -25.94973577,
                 "Longitude": 32.59998746,
-                "Nome da Sala": "C4",
+                "Nome": "C4",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -81,7 +81,7 @@
             "properties": {
                 "Latitude": -25.94972974,
                 "Longitude": 32.59967431,
-                "Nome da Sala": "C5",
+                "Nome": "C5",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -98,7 +98,7 @@
             "properties": {
                 "Latitude": -25.94972853,
                 "Longitude": 32.59972863,
-                "Nome da Sala": "C6",
+                "Nome": "C6",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -115,7 +115,7 @@
             "properties": {
                 "Latitude": -25.94972552,
                 "Longitude": 32.59980775,
-                "Nome da Sala": "C7",
+                "Nome": "C7",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -132,7 +132,7 @@
             "properties": {
                 "Latitude": -25.94971888,
                 "Longitude": 32.59988621,
-                "Nome da Sala": "C8",
+                "Nome": "C8",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -149,7 +149,7 @@
             "properties": {
                 "Latitude": -25.94972069,
                 "Longitude": 32.59995125,
-                "Nome da Sala": "C9",
+                "Nome": "C9",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -166,7 +166,7 @@
             "properties": {
                 "Latitude": -25.94972069,
                 "Longitude": 32.60000758,
-                "Nome da Sala": "C10",
+                "Nome": "C10",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -183,7 +183,7 @@
             "properties": {
                 "Latitude": -25.9494144,
                 "Longitude": 32.59966493,
-                "Nome da Sala": "D1",
+                "Nome": "D1",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -200,7 +200,7 @@
             "properties": {
                 "Latitude": -25.9494144,
                 "Longitude": 32.59976685,
-                "Nome da Sala": "D2",
+                "Nome": "D2",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -217,7 +217,7 @@
             "properties": {
                 "Latitude": -25.94941801,
                 "Longitude": 32.59989426,
-                "Nome da Sala": "D3",
+                "Nome": "D3",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -234,7 +234,7 @@
             "properties": {
                 "Latitude": -25.94941922,
                 "Longitude": 32.59999484,
-                "Nome da Sala": "D4",
+                "Nome": "D4",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -251,7 +251,7 @@
             "properties": {
                 "Latitude": -25.9494144,
                 "Longitude": 32.59966493,
-                "Nome da Sala": "D5",
+                "Nome": "D5",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -268,7 +268,7 @@
             "properties": {
                 "Latitude": -25.9494156,
                 "Longitude": 32.59972662,
-                "Nome da Sala": "D6",
+                "Nome": "D6",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -285,7 +285,7 @@
             "properties": {
                 "Latitude": -25.94941681,
                 "Longitude": 32.59980306,
-                "Nome da Sala": "D7",
+                "Nome": "D7",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -302,7 +302,7 @@
             "properties": {
                 "Latitude": -25.94940716,
                 "Longitude": 32.5998795,
-                "Nome da Sala": "D8",
+                "Nome": "D8",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },
@@ -319,7 +319,7 @@
             "properties": {
                 "Latitude": -25.94939872,
                 "Longitude": 32.59999618,
-                "Nome da Sala": "D10",
+                "Nome": "D10",
                 "Departamento": "Departamento de Matematica e Informatica",
                 "Faculdade": "Faculdade de Ciencias"
             },

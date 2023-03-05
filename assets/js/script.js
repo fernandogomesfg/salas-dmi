@@ -28,6 +28,33 @@ var baseMaps = {
 
 L.control.layers(baseMaps).addTo(map);
 
+function onEachFeature(feature, salasDMI) {
+    if (feature.properties && feature.properties.Latitude) {
+        salasDMI.bindPopup(
+            `
+            <table>
+                <tr>
+                    <td ><b>Nome da Sala: </b></td>                  
+                    <td></b>${feature.properties.Nome} </br></td>
+                </tr>
+                <tr>
+                    <td><b>Departamento: </b></td> 
+                    <td></b>${feature.properties.Departamento}</td>
+                </tr>
+                
+                <tr>
+                    <td><b>Faculdade:</b>
+                    <td>${feature.properties.Faculdade}</td>
+                </tr>
+            </table>
+            
+            `);
+
+    }
+}
+
+L.geoJSON(salasDMI, { onEachFeature: onEachFeature }).addTo(map)
+
 
 
 
