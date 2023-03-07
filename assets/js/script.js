@@ -63,13 +63,17 @@ const geojsonMarkerOptions = {
 
 }
 
+const markers = L.markerClusterGroup();
+
 L.geoJSON(salasDMI, {
     onEachFeature: onEachFeature,
     pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOptions)
+        return markers.addLayer(L.circleMarker(latlng, geojsonMarkerOptions))
     }
 }).addTo(map)
 
+// marker Cluster
+map.addLayer(markers);
 
 
 
