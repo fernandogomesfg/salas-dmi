@@ -1,23 +1,23 @@
-var map = L.map('map').setView([-25.94972974, 32.59967431], 16);
+var map = L.map('map').setView([-25.94972974, 32.59967431], 18);
 
 
 var googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-    maxZoom: 20,
+    maxZoom: 26,
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
 })
 
 var googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-    maxZoom: 20,
+    maxZoom: 26,
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
 })
 var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 26,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 })
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 19
+    maxZoom: 26
 }).addTo(map);
 
 var baseMaps = {
@@ -53,7 +53,22 @@ function onEachFeature(feature, salasDMI) {
     }
 }
 
-L.geoJSON(salasDMI, { onEachFeature: onEachFeature }).addTo(map)
+const geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: '#ff7800',
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+
+}
+
+L.geoJSON(salasDMI, {
+    onEachFeature: onEachFeature,
+    pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions)
+    }
+}).addTo(map)
 
 
 
