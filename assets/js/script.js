@@ -83,3 +83,11 @@ $(".print-map").click(function () {
 // add browserControl to map
  L.control.browserPrint().addTo(map);
 //L.control.browserPrint({ position: 'topright', title: 'Print Map', printModes: ["Landscape"] }).addTo(map);
+
+// Control Measure
+L.control.measure({
+    primaryLengthUnit: 'kilometers', 
+    secondaryLengthUnit: 'meters',
+    primaryAreaUnit: 'sqmeters', 
+    secondaryAreaUnit: undefined
+}).addTo(map)
