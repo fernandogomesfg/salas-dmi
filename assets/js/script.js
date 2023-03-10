@@ -75,6 +75,7 @@ L.geoJSON(salasDMI, {
 // marker Cluster
 map.addLayer(markers);
 
-
-
-
+// Print Map
+$(".print-map").click(function () {
+    window.print();
+})
