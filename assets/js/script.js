@@ -79,3 +79,7 @@ map.addLayer(markers);
 $(".print-map").click(function () {
     window.print();
 })
+
+// add browserControl to map
+ L.control.browserPrint().addTo(map);
+//L.control.browserPrint({ position: 'topright', title: 'Print Map', printModes: ["Landscape"] }).addTo(map);
