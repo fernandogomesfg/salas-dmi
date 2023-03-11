@@ -29,7 +29,7 @@ var baseMaps = {
 L.control.layers(baseMaps).addTo(map);
 
 function onEachFeature(feature, salasDMI) {
-    if (feature.properties && feature.properties.Latitude) {
+    if (feature.properties && feature.properties.Nome) {
         salasDMI.bindPopup(
             `
             <table>
