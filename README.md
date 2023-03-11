@@ -1,2 +1,2 @@
-# salas-dmi
- Mapa das salas do DMI
+# salas DMI 
+ Mapa das salas do DMI para o projecto GeoCampus 
